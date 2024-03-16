@@ -1,3 +1,25 @@
+server:
+  port: 7001
+  tomcat:
+    uri-encoding: UTF-8
+    max-swallow-size: -1
+
 spring:
   profiles:
     active: dev
+  banner:
+    location: classpath:banner/banner.txt
+#    image:
+#      location: banner/cat.png
+
+# 配置日志级别
+logging:
+  level:
+    root: info
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: assign_id  # 雪花算法
+    banner: false
