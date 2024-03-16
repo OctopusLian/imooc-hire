@@ -7,4 +7,15 @@
 用户微服务端口号：7001  
 企业微服务端口号：6001  
 
+## 安装  
 
+### Nacos  
+
+```shell
+docker pull nacos/nacos-server:v2.1.1
+
+docker run  --name nacos \
+-e MODE=standalone \
+-p 8848:8848 \
+-d nacos/nacos-server:v2.1.1
+```
