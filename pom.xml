@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.imooc</groupId>
+  <artifactId>imooc-hire</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Archetype - imooc-hire</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <!--
+           hire-common: 通用工程，工具类、枚举类、异常类、常用属性类、资源类等等
+           hire-pojo: 所有实体类的管理，pojo、bean、entity、bo、vo、dto 等
+           hire-api: web接口（应用）的公用依赖
+           service-user: 用户微服务
+           service-company: 企业微服务
+       -->
+    <module>hire-common</module>
+    <module>hire-pojo</module>
+    <module>hire-api</module>
+    <module>service-user</module>
+    <module>service-company</module>
+  </modules>
+
+  <!--
+        打包方式：
+        1. jar（默认）
+        2. war (使用外部tomcat进行发布的时候)
+        3. pom （针对root工程/父工程进行的使用，并且顶级pom可以管理所有jar依赖的坐标，pom不参与打包）
+    -->
+  <packaging>pom</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+  </properties>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <!-- Java 编译 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
