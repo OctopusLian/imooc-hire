@@ -29,11 +29,191 @@
     -->
   <packaging>pom</packaging>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.7.3</version>
+    <relativePath />
+  </parent>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
+
+  <!--
+        使用dependencyManagement的目的是为了保证当前父工程的干净，
+        也就是说父工程他只负责对依赖（坐标）的管理，以及依赖的版本管理，而不会去引入额外的jar依赖
+        如此一来，父工程的职责就相当的单一了，而且也符合面向对象的理念，是一种父子一来继承的关系
+        依赖的导入只有在各自的子工程中才会导入。
+    -->
+  <dependencyManagement>
+    <dependencies>
+      <!-- mysql 驱动 -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.26</version>
+      </dependency>
+      <!-- mybatis plus -->
+      <!--<dependency>-->
+      <!--<groupId>org.mybatis.spring.boot</groupId>-->
+      <!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
+      <!--<version>2.1.0</version>-->
+      <!--</dependency>-->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>3.5.0</version>
+      </dependency>
+      <!-- 通用mapper逆向工具 -->
+      <!--<dependency>-->
+      <!--<groupId>tk.mybatis</groupId>-->
+      <!--<artifactId>mapper-spring-boot-starter</artifactId>-->
+      <!--<version>2.1.5</version>-->
+      <!--</dependency>-->
+      <!-- pagehelper -->
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>1.4.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver</artifactId>
+        <version>3.12.11</version>
+      </dependency>
+
+      <!-- zookeeper -->
+      <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>3.8.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-framework</artifactId>
+        <version>5.3.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.curator</groupId>
+        <artifactId>curator-recipes</artifactId>
+        <version>5.3.0</version>
+      </dependency>
+
+
+      <!--<dependency>-->
+      <!--<groupId>com.squareup.okhttp3</groupId>-->
+      <!--<artifactId>okhttp</artifactId>-->
+      <!--<version>4.2.2</version>-->
+      <!--</dependency>-->
+
+      <!-- jackson -->
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>2.10.2</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>2.10.2</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.10.2</version>
+      </dependency>
+
+
+      <!-- 百度api -->
+      <dependency>
+        <groupId>com.baidu.aip</groupId>
+        <artifactId>java-sdk</artifactId>
+        <version>4.16.8</version>
+      </dependency>
+
+      <!-- apache 工具类 -->
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.15</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.12.0</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>1.4</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.11.0</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.13</version>
+      </dependency>
+
+      <!-- google 工具类 -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>28.2-jre</version>
+      </dependency>
+
+      <!-- joda-time 时间工具 -->
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>2.10.6</version>
+      </dependency>
+
+      <!-- knife4j 接口文档工具 -->
+      <dependency>
+        <groupId>com.github.xiaoymin</groupId>
+        <artifactId>knife4j-spring-boot-starter</artifactId>
+        <version>2.0.9</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.xiaoymin</groupId>
+        <artifactId>knife4j-springdoc-ui</artifactId>
+        <version>3.0.3</version>
+      </dependency>
+
+      <!-- MinIO -->
+      <dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>8.2.1</version>
+      </dependency>
+
+      <!-- 视频处理 -->
+      <dependency>
+        <groupId>com.googlecode.soundlibs</groupId>
+        <artifactId>mp3spi</artifactId>
+        <version>1.9.5.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bytedeco</groupId>
+        <artifactId>javacv</artifactId>
+        <version>1.5.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bytedeco</groupId>
+        <artifactId>ffmpeg-platform</artifactId>
+        <version>4.1.3-1.5.1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <finalName>${project.artifactId}</finalName>
