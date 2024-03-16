@@ -8,3 +8,7 @@ spring:
     active: 
   banner:
     location: classpath:banner/banner.txt
+
+logging:
+  level:
+    root: debug
