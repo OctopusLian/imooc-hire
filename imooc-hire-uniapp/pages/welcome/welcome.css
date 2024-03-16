@@ -1,0 +1,49 @@
+page {
+	background-color: #31b9b3;
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	
+	height: 56px;
+	width: 56px;
+	border-radius: 10px;
+}
+
+.logo-text {
+	color: #36c6c0;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.slogan {
+	/* margin-top: 420upx; */
+	margin-top: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	padding: 32upx 80upx;
+	border-style:solid;
+	border-width: 1.5px;
+	border-color: #4ec6bd;
+	border-radius: 10px;
+}
+
+.slogan-text {
+	color: white;
+	font-size: 22px;
+	font-weight: 400;
+	align-self: center;
+}
+

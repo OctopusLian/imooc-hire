@@ -1,0 +1,61 @@
+page {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	background-color: #FFFFFF;
+}
+
+.big-box {
+	padding: 30rpx;
+}
+
+.name-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	margin-top: 10rpx;
+}
+.name-text {
+	font-size: 20px;
+}
+.authentication-text {
+	font-size: 14px;
+	color: #979a9a;
+	align-self: flex-end;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+.my-name-box {
+	margin-top: 20rpx;
+}
+.my-name {
+	font-size: 18px;
+	color: #7d7d80;
+}
+
+.tips {
+	font-size: 12px;
+	font-weight: 400;
+	color: #9ca0a3;
+	width: 700rpx;
+}
+
+.outter-box {
+	margin-top: 36px;
+}
+
+.chosen-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.small-words {
+	font-size: 12px;
+	font-weight: 400;
+	color: #9ca0a3;
+	align-self: flex-end;
+	margin-bottom: 1px;
+	margin-left: 10px;
+}

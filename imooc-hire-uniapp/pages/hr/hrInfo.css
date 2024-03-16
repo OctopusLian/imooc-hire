@@ -1,0 +1,91 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	
+	/* justify-content: flex-start;
+	align-content: center;
+	align-items: center; */
+}
+
+.block-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.block-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	width: 90%;
+	height: 70px;
+	
+	align-self: center;
+}
+
+.left-part {
+	align-self: center;
+}
+
+.right-part {
+	align-self: center;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.small-face {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	align-self: center;
+	margin-right: 6px;
+}
+
+.right-arrow {
+	width: 16px;
+	height: 16px;
+	align-self: center;
+}
+
+.field-lable {
+	font-size: 18px;
+	color: #202121;
+	font-weight: 400;
+}
+
+.field-words {
+	font-size: 15px;
+	font-weight: 400;
+	color: #808184;
+}
+
+.undo {
+	color: #c3c6cf;
+	font-weight: 300;
+}
+
+
+.picker-view {
+	width: 750rpx;
+	height: 600rpx;
+	margin-top: 20rpx;
+}
+.item {
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.picker-words {
+	font-size: 18px;
+	width: 95%;
+}
+
+.picker {
+	color: #b5bdbd;
+	font-size: 18px;
+	width: 95%;
+}

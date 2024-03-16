@@ -1,0 +1,164 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.all-in-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.left-main-scroll {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	width: 40%;
+	
+	height: 800rpx;
+}
+
+.right-sub-scroll {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	width: 60%;
+	
+	padding: 10px 10px;
+	
+	border-left: solid 0.5px #a3aeb3;
+	
+	height: 800rpx;
+}
+
+.left-box {
+	align-self: center;
+	margin: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	padding: 10px 18px;
+	border-radius: 6px;
+}
+.left-box-selected {
+	background-color: #f1f2f3;
+	align-self: center;
+	margin: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	padding: 10px 18px;
+	border-radius: 6px;
+}
+
+.left-words {
+	font-size: 14px;
+	
+}
+.left-words-selected {
+	font-size: 14px;
+	background-color: #f1f2f3;
+}
+
+
+
+.whole-sub-wrapper {
+	margin-bottom: 26px;
+}
+
+.sub-title-words {
+	font-size: 20px;
+}
+
+.third-box {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.third-lable {
+	background-color: #f1f2f3;
+	width: 48%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	padding: 10px 0;
+	margin-top: 8px;
+	
+	border-radius: 6px;
+}
+.third-lable-selected {
+	width: 48%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	padding: 9px 0;
+	margin-top: 8px;
+	
+	border-radius: 6px;
+	border: solid 1px #19b0ab;
+	background-color: #e7f7f7;
+}
+
+.third-words {
+	font-size: 12px;
+	font-weight: 300;
+}
+.third-words-selected {
+	font-size: 12px;
+	font-weight: 300;
+	color: #19b0ab;
+}
+
+
+/* ::-webkit-scrollbar {
+	display: none;
+	width: 0 !important;
+	height: 0 !important;
+	-webkit-appearance: none;
+	background: transparent;
+	color: transparent;
+} */
+
+/*每个页面公共css */
+/* 解决小程序和app滚动条的问题 */
+/* #ifdef MP-WEIXIN || APP-PLUS */
+	::-webkit-scrollbar {
+		display: none;
+		width: 0 !important;
+		height: 0 !important;
+		-webkit-appearance: none;
+		background: transparent;
+		color: transparent;
+	  }
+/* #endif */
+
+/* 解决H5 的问题 */
+/* #ifdef H5 */
+	uni-scroll-view .uni-scroll-view::-webkit-scrollbar {
+		/* 隐藏滚动条，但依旧具备可以滚动的功能 */
+		display: none;
+		width: 0 !important;
+		height: 0 !important;
+		-webkit-appearance: none;
+		background: transparent;
+		color: transparent;
+	}
+/* #endif */

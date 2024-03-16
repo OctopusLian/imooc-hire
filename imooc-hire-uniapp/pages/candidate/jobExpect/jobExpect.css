@@ -1,0 +1,134 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.card-box {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-one {
+	font-size: 24px;
+}
+
+.title-two {
+	font-size: 14px;
+	margin-top: 6px;
+	
+	color: #abb1aa;
+}
+
+
+
+
+.expect-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	margin-top: 20px;
+}
+
+.left-part {
+	align-self: center;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.position-text {
+	font-size: 18px;
+}
+
+.position-desc-text {
+	margin-top: 2px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #959a96;
+}
+
+.right-arrow {
+	width: 20px;
+	height: 20px;
+	align-self: center;
+}
+
+
+.add-expect-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* border: red 1px dotted; */
+	border-radius: 10px;
+	/* border: 2px dashed #31B9B3; */
+	/* height: 10px; */
+	/* background-color: #959a96; */
+	
+	margin-top: 42px;
+	padding: 22px 0px;
+	
+	border: 1.5px dashed transparent;
+	background: linear-gradient(white,white) padding-box,
+	repeating-linear-gradient(-48deg, #31B9B3 0, #31B9B3 0.3em, white 0,white 0.6em);
+	
+	/* border-top: 1.2px dashed transparent;
+	background: linear-gradient(#fff,#fff) padding-box, 
+				repeating-linear-gradient(-45deg,#f6f6f6 0, #f6f6f6 0.3em, #31B9B3 0,#31B9B3 0.6em); */
+				/* 0.3em设置虚线点的宽度或长度；0.6em设置虚线点的间距 */
+}
+
+.icon-add {
+	width: 22px;
+	height: 22px;
+	align-self: center;
+}
+
+.expect-text {
+	color: #31B9B3;
+	font-size: 18px;
+	align-self: center;
+	margin-left: 10px;
+}
+
+
+.work-status {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	margin-top: 32px;
+}
+
+.work-status-text {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.operate-status {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+}
+
+.position-status-text {
+	margin-top: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #959a96;
+	align-self: center;
+	margin-right: 6px;
+}

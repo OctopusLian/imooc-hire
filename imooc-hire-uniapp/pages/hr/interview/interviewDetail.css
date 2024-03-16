@@ -1,0 +1,232 @@
+page {
+	background-color: #ffffff;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.card-box {
+	padding: 16px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+	background-color: #ffffff;
+	padding: 12px 20px;
+	border-radius: 6px;
+	margin-top: 26px;
+	
+	box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+	/* box-shadow: 1px 1px 2px rgba(0, 0, 0, .2), 2px 2px 2px rgba(0, 0, 0, .2), 2px 2px 3px rgba(0, 0, 0, .2); */
+}
+
+
+
+.cand-wrapper {
+	margin-top: 12px;
+	margin-bottom: 6px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.face {
+	width: 48px;
+	height: 48px;
+	align-self: center;
+	margin-right: 16px;
+	border-radius: 50px;
+}
+
+.cand-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 86%;
+	align-self: center;
+}
+
+.name-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.interview-job-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* border-top: red 1px dotted; */
+	
+	margin-top: 6px;
+	padding-top: 8px;
+	margin-bottom: 12px;
+	
+	font-weight: 300;
+	
+	border-top: 1.2px dashed transparent;
+	background: linear-gradient(#fff,#fff) padding-box, 
+				repeating-linear-gradient(-45deg,#f6f6f6 0, #f6f6f6 0.3em, #fff 0,#fff 0.6em);
+				/* 0.3em设置虚线点的宽度或长度；0.6em设置虚线点的间距 */
+}
+
+.cand-name {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.cand-company {
+	font-size: 14px;
+	margin-top: 4px;
+	font-weight: 300;
+	color: #7e8082;
+}
+
+.interview-status {
+	color: #949696;
+	font-size: 14px;
+	align-self: center;
+}
+
+.status-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+	background-color: #ffffff;
+	border-radius: 6px;
+	margin-top: 6px;
+}
+
+.status-icon {
+	width: 50px;
+	height: 50px;
+	align-self: center;
+	margin-right: 6px;
+}
+
+.status-words {
+	font-size: 20px;
+	align-self: center;
+	margin-top: 10px;
+}
+
+.interview-job-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 12px 0px;
+}
+
+.interview-job-words {
+	color: #656667;
+	font-size: 14px;
+	margin-left: 4px;
+}
+
+.interview-date-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.interview-info-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 12px;
+}
+
+.small-icon {
+	width: 18px;
+	height: 18px;
+	align-self: center;
+	margin-right: 6px;
+}
+
+.interview-date-words {
+	color: #656667;
+	font-size: 14px;
+	margin-left: 4px;
+	/* align-self: flex-start; */
+}
+
+.btn-wrapper {
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	align-items: center;
+	align-self: center;
+	background-color: #FFFFFF;
+	border: solid 1.2px #31B9B3;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.btn-words {
+	color: #31B9B3;
+	align-self: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+
+.btn-wrapper-cand {
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.btn-wrapper-accept {
+	width: 60%;
+	height: 46px;
+	border-radius: 4px;
+	align-items: center;
+	align-self: center;
+	background-color: #31B9B3;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.btn-wrapper-refuse {
+	width: 35%;
+	height: 46px;
+	border-radius: 4px;
+	align-items: center;
+	align-self: center;
+	background-color: #FFFFFF;
+	border: solid 1.2px #31B9B3;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn-words-accept {
+	color: #ffffff;
+	align-self: center;
+	font-weight: 400;
+	font-size: 18px;
+}
+.btn-words-refuse {
+	color: #31B9B3;
+	align-self: center;
+	font-weight: 400;
+	font-size: 18px;
+}

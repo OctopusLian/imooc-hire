@@ -1,0 +1,121 @@
+page {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #FFFFFF;
+	padding-top: 12px;
+	padding-bottom: 100px;
+}
+
+
+.outer-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.title-box {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	align-self: center;
+}
+.title-words {
+	font-size: 22px;
+}
+.title-second {
+	font-size: 14px;
+	color: #8c98a9;
+	margin-top: 6px;
+}
+
+.title-box-num {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	align-self: center;
+}
+.num-words {
+	font-size: 16px;
+	align-self: flex-end;
+	padding-bottom: 3upx;
+}
+.num-words-red {
+	font-size: 16px;
+	align-self: flex-end;
+	padding-bottom: 3upx;
+	color: red;
+}
+
+
+.business-license-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	border: solid 1px #dbe1e1;
+	width: 110px;
+	height: 110px;
+	
+	border-radius: 6px;
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.photo-wrapper {
+	width: 110px;
+	height: 110px;
+	
+	border-radius: 6px;
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.photo-item {
+	width: 110px;
+	height: 110px;
+	
+	border-radius: 6px;
+	margin-right: 10px;
+}
+
+.business-license {
+	width: 110px;
+	height: 110px;
+}
+
+.upload-icon {
+	width: 26px;
+	height: 26px;
+	align-self: center;
+}
+.upload-words {
+	color: #797c7c;
+	font-size: 12px;
+	align-self: center;
+	margin-top: 2px;
+}
+
+.photo-box {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	align-self: center;
+	align-items: center;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+.photo-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.icon-delete {
+	width: 26px;
+	height: 26px;
+	position: relative;
+	left: 84px;
+	bottom: 115px;
+	z-index: 1000;
+}

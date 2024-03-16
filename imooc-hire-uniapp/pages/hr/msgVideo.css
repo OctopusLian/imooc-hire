@@ -1,0 +1,43 @@
+page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	background-color: #000000;
+}
+
+.video-box {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center; */
+}
+
+.video-display {
+	width: 100%;
+	height: 700px;
+}
+
+.control-box {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	/* background-color: aquamarine; */
+	
+	position: fixed;
+	bottom: 50px;
+}
+.icon-video-goback {
+	width: 30px;
+	height: 30px;
+	
+	position: fixed;
+	left: 20px;
+}
+
+.icon-video-download {
+	width: 30px;
+	height: 30px;
+	
+	position: fixed;
+	right: 20px;
+}

@@ -1,0 +1,66 @@
+page {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #FFFFFF;
+	padding-top: 12px;
+}
+
+.outer-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.title-box {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	align-self: center;
+}
+.title-words {
+	font-size: 22px;
+}
+.title-second {
+	font-size: 14px;
+	color: #8c98a9;
+	margin-top: 6px;
+}
+
+.sign-area {
+	margin-top: 20px;
+	background-color: #f8f9fb;
+	padding: 12px;
+	border-radius: 10px;
+	width: 90%;
+	align-self: center;
+	font-size: 18px;
+}
+.placeholder-style {
+	font-size: 16px;
+	color: #9cacc1;
+}
+
+.item-box-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 95%;
+	align-self: center;
+} 
+.item-box {
+	display: flex;
+	flex-direction: row;
+}
+.other-words {
+	font-size: 14px;
+	color: #aeb6c3;
+}
+.other-point {
+	width: 20px;
+	height: 20px;
+	align-self: center;
+}
+.point-words {
+	font-size: 14px;
+	align-self: center;
+	color: #526378;
+}

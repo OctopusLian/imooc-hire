@@ -1,0 +1,58 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.card-box {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-one {
+	font-size: 24px;
+}
+
+.title-two {
+	font-size: 14px;
+	margin-top: 6px;
+	
+	color: #abb1aa;
+}
+
+.editor-content {
+	height: 800upx;
+	margin-top: 20px;
+}
+
+.last-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.enter-length-words {
+	color: #31B9B3;
+	font-size: 12px;
+	font-weight: 300;
+}
+.enter-length-words-max {
+	color: red;
+	font-size: 12px;
+	font-weight: 300;
+}
+.max-length-words {
+	color: #828484;
+	font-size: 12px;
+	font-weight: 300;
+}

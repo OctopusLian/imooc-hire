@@ -1,0 +1,17 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+
+.words-box {
+	margin: 5px 10px; 
+	text-indent: 22px; 
+	line-height: 24px;
+}
+
+.words {
+	color: #1b1b1b;
+	font-size: 14px;
+	font-weight: 330;
+}

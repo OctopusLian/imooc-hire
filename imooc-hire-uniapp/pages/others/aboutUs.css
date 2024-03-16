@@ -1,0 +1,63 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+
+.top {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	
+	height: 56px;
+	width: 56px;
+	border-radius: 10px;
+	background-color: #36c6c0;
+}
+
+.logo-text {
+	color: #FFFFFF;
+}
+
+.version {
+	margin-top: 8px;
+}
+
+.version-words {
+	color: #191919;
+	font-size: 14px;
+}
+
+.qrcode {
+	margin-top: 30px;
+	width: 150px;
+	height: 150px;
+}
+
+.copyright-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	
+	margin-bottom: 20px;
+}
+
+.copyright {
+	color: lightgray;
+	font-size: 12px;
+	align-self: center;
+}

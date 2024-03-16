@@ -1,0 +1,108 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.wraning-wrapper {
+	padding: 6px 20px;
+	background-color: antiquewhite;
+	margin-bottom: 12px;
+}
+
+.wraning-words {
+	color: #f37444;
+	font-size: 14px;
+}
+
+.card-box {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+
+.title-line-one {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.title-line-two {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 6px;
+}
+
+.title-one {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.title-two {
+	font-size: 14px;
+	margin-top: 6px;
+	
+	color: #abb1aa;
+}
+
+.job-box {
+	align-self: center;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.title-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 16px;
+	align-self: center;
+}
+.info-line {
+	margin-top: 4px;
+}
+
+.info {
+	color: #999a9f;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+.btn-wrapper {
+	width: 100%;
+	height: 46px;
+	border-radius: 4px;
+	align-items: center;
+	align-self: center;
+	background-color: #31B9B3;
+	border: solid 1.2px #31B9B3;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.btn-words {
+	color: #FFFFFF;
+	align-self: center;
+	font-weight: 400;
+	font-size: 18px;
+}

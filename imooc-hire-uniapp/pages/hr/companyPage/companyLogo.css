@@ -1,0 +1,61 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+
+.card-box {
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.title-one {
+	font-size: 24px;
+}
+
+.title-two {
+	font-size: 14px;
+	margin-top: 6px;
+	
+	color: #abb1aa;
+}
+
+.business-license-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	border: solid 2px #dbe1e1;
+	width: 150px;
+	height: 150px;
+	
+	border-radius: 6px;
+}
+
+.business-license {
+	width: 150px;
+	height: 150px;
+}
+
+.upload-icon {
+	width: 30px;
+	height: 30px;
+	align-self: center;
+}
+.upload-words {
+	color: #797c7c;
+	font-size: 14px;
+	align-self: center;
+	margin-top: 2px;
+}

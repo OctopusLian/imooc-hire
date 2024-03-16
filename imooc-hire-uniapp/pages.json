@@ -1,0 +1,2049 @@
+{
+    "pages" : [
+		
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/welcome/welcome",
+            "style" : {
+        		"navigationBarTitleText" : "主页",
+                "app-plus" : {
+                    "titleNView" : false, 	// 禁用原生导航栏
+					"bounce" : "none"  		// 将回弹属性关掉
+                },
+                "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+            }
+        },
+		{
+		    "path" : "pages/welcome/changePerson",
+		    "style" : {
+				"navigationBarTitleText" : "主页",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+					"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/loginRegist/loginRegist",
+		    "style" : {
+		    	"navigationBarTitleText" : "登录注册",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		    		"bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/position",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "推荐",
+				"navigationBarTextStyle":"white",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/chooseProvince",
+		    "style": {
+				"titleNView": {
+					"buttons": [ //原生标题栏按钮配置,
+						{
+							"text": "清除",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+							"fontSize" : "16px",
+							"width": "60px",
+							"fontWeight":"bold"
+						}
+					]
+				},
+		        "navigationBarTitleText": "选择省份",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ffffff"
+		    }
+		},
+		{
+		    "path" : "pages/candidate/chooseCity",
+		    "style": {
+		        "navigationBarTitleText": "选择地区",
+				"navigationBarTextStyle":"black",
+				"navigationBarBackgroundColor": "#ffffff"
+		    }
+		},
+		{
+		    "path" : "pages/candidate/positionDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+			"path": "pages/candidate/popup",
+			"style": {
+				"navigationBarTitleText": "Popup 弹出层",
+				"app-plus": {
+					"softinputMode": "adjustResize"
+				}
+			}
+		},
+		{
+		    "path" : "pages/candidate/message",
+		    "style" : {
+		    	"navigationBarTitleText" : "互动消息",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none"	// 禁止出现滚动条
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/candidate/messageList",
+		    "style" : {
+		    	"navigationBarTitleText" : "消息列表",
+		    	"navigationBarTextStyle":"black",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/candidate/countsPage/jobOfMyFollowedHR",
+		    "style": {
+		        "navigationBarTitleText": "我关注HR的职位",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/candidate/discover",
+		    "style" : {
+				"navigationBarTitleText" : "求职天地",
+				"navigationBarTextStyle" : "white",
+				"navigationBarBackgroundColor": "#31B9B3",
+		        "enablePullDownRefresh" : true ,// 开启单页面下拉刷新功能
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ffffff",
+					"backgroundColorBottom" : "#ffffff",
+					"scrollIndicator" : "none"
+				}
+		    }
+		},
+		{
+		    "path" : "pages/candidate/articleDetail",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"navigationBarTextStyle" : "black",
+				"navigationBarBackgroundColor": "#ffffff",
+		        "enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"app-plus" : {
+				    "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#ffffff",
+					"backgroundColorBottom" : "#ffffff",
+					"scrollIndicator" : "none"
+				}
+		    }
+		},
+		{
+		    "path" : "pages/candidate/mine",
+		    "style" : {
+		    	"navigationBarTitleText" : "我的",
+				"navigationBarTextStyle" : "white",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		    		// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/editResume",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的在线简历",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "预览",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/previewResumePage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/myAdvantage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/workHistroy",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的工作经验",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/projectExperience",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的项目经验",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/myEducation",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的教育经历",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/qualification",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/techTags",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/workContent",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/resume/projectContent",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/countsPage/myLikedJob",
+		    "style": {
+		        "navigationBarTitleText": "我收藏的职位",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/candidate/countsPage/myFollowedHR",
+		    "style": {
+		        "navigationBarTitleText": "我关注的招聘者",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/candidate/countsPage/mySendedJob",
+		    "style": {
+		        "navigationBarTitleText": "我投递过的职位",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/candidate/countsPage/whoLookMe",
+		    "style": {
+		        "navigationBarTitleText": "谁看过我",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/candidate/jobExpect/jobExpect",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#FFFFFF",
+		        	"backgroundColorBottom" : "#FFFFFF",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/jobExpect/expectDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "删除",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#FFFFFF",
+		        	"backgroundColorBottom" : "#FFFFFF",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/others/moreCourse",
+		    "style": {
+		        "navigationBarTitleText": "更多课程",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/others/privacyRule",
+		    "style": {
+		        "navigationBarTitleText": "慕聘网用户协议",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/others/aboutUs",
+		    "style": {
+		        "navigationBarTitleText": "关于我们",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/others/settings",
+		    "style": {
+		        "navigationBarTitleText": "设置",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyPage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#585a6c",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+					// "titleNView": {
+					// 	"buttons": [ //原生标题栏按钮配置,
+					// 		{
+					// 			"text": "\ue8ac",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+					// 			"fontSize" : "22px",
+					// 			"fontSrc": "/static/fonts/iconfont.ttf",
+					// 			"color" : "#FFFFFF",
+					// 			"colorPressed" : "#988f92",
+					// 			"width": "44px"
+					// 		}
+					// 	]
+					// },
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#585a6c",
+		        	"backgroundColorBottom" : "#585a6c",
+		        	"scrollIndicator" : "none"
+					
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyBrand",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#FFFFFF",
+		        	"backgroundColorBottom" : "#FFFFFF",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyLogo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyStaffCounts",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyNature",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyFinancing",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyIndustry",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyWorkTime",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyShortName",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyAddress",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyLegalRepresentative",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyRegistPlace",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyRegistCapital",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyIntroduce",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyBenefits",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/companyPage/companyPhoto",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/hrPage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的主页",
+				"navigationBarBackgroundColor": "#4c6985",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#4c6985",
+		        	"backgroundColorBottom" : "#f8f8f8",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/hrSignature",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "个人签名",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/hrTags",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "个人标签",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/myFace",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "上传头像",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/myName",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的姓名",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/mySex",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的称谓",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/myNickname",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "修改昵称",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		
+		{
+		    "path" : "pages/userInfo/myEmail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "修改邮箱",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/myPosition",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "我的职务",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#FFFFFF",
+								"colorPressed" : "#988f92",
+								"width": "56px"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/userInfo/myCompany",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "所在公司",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/createHR",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/enterCompany",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/newCompany",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/chooseCompany",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/staffCounts",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/chooseIndustry",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "清空",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px",
+								"fontWeight":"bold"
+							}
+						]
+					},
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/verify/verifying",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/verify/failed",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/company/verify/success",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/recommend",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "推荐",
+				"navigationBarTextStyle":"white",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/recommendJobType",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "选择职位类别",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px"
+							}
+						]
+					},
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/recommendConditions",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "筛选",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/recommendDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/msg",
+		    "style" : {
+		    	"navigationBarTitleText" : "互动消息",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none"	// 禁止出现滚动条
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/hr/msgList",
+		    "style" : {
+		    	"navigationBarTitleText" : "消息列表",
+		    	"navigationBarTextStyle":"black",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/hr/msgVideo",
+		    "style" : {
+		    	"navigationBarTitleText" : "",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#000000",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none", 	// 禁止出现滚动条
+					"softinputMode": "adjustResize"
+		        },
+		        "enablePullDownRefresh": false, // 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/hr/job",
+		    "style" : {
+		    	"navigationBarTitleText" : "职位管理",
+		    	"navigationBarTextStyle":"white",
+		    	"navigationBarBackgroundColor": "#31B9B3",
+		        "app-plus" : {
+		            "titleNView" : false	,//禁用原生导航栏
+					"bounce" : "none"			,// 将回弹属性关掉，禁止页面滑动
+					"scrollIndicator": "none"	// 禁止出现滚动条
+		        },
+		        "enablePullDownRefresh": false // 开启单页面下拉刷新功能
+				// "onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/hr/publishNewJob/publishNewJob",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/publishNewJob/chooseJobType",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "选择职位类别",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px"
+							},
+							{
+								"text": "重置",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "44px"
+							}
+						]
+					},
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/publishNewJob/jobDesc",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px"
+							}
+						]
+					},
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/publishNewJob/jobTags",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					"titleNView": {
+						"buttons": [ //原生标题栏按钮配置,
+							{
+								"text": "保存",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+								"fontSize" : "16px",
+								"color" : "#31B9B3",
+								"colorPressed" : "#35d0cb",
+								"width": "56px"
+							}
+						]
+					},
+		        	"bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/jobDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/interview/pendingList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+					// "titleNView": {
+					// 	"buttons": [ //原生标题栏按钮配置,
+					// 		{
+					// 			"text": "面试记录",		//原生标题栏增加分享按钮，点击事件可通过页面的 onNavigationBarButtonTap 函数进行监听
+					// 			"fontSize" : "16px",
+					// 			"color" : "#31B9B3",
+					// 			"colorPressed" : "#35d0cb",
+					// 			"width": "86px"
+					// 		}
+					// 	]
+					// },
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/interview/interviewRecord",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "面试记录",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"navigationBarTextStyle": "white",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#31B9B3",
+		        	"backgroundColorBottom" : "#f8f8f8",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+		    }
+		},
+		{
+		    "path" : "pages/hr/interview/interviewDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/interview/chooseJobList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/hr/interview/createInterview",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "发送面试邀约",
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black",
+		        "app-plus" : {
+		            // "titleNView" : false, 	// 禁用原生导航栏
+		        	// "bounce" : "none",  		// 将回弹属性关掉
+		        	"backgroundColorTop" : "#ffffff",
+		        	"backgroundColorBottom" : "#ffffff",
+		        	"scrollIndicator" : "none"
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+        {
+            "path" : "pages/hr/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "white",
+                "app-plus" : {
+                    "titleNView" : false, 	// 禁用原生导航栏
+                	// "bounce" : "none"  		// 将回弹属性关掉
+                	"backgroundColorTop" : "#31B9B3",
+                	"backgroundColorBottom" : "#f8f8f8",
+                	"scrollIndicator" : "none"
+                },
+                "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+            }
+        },
+		
+		{
+		    "path" : "pages/hr/hrInfo",
+		    "style": {
+		        "navigationBarTitleText": "个人信息",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+			}
+		},
+		{
+		    "path" : "pages/hr/statistics/collectResume",
+		    "style": {
+		        "navigationBarTitleText": "收藏的简历",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+			}
+		},
+		{
+		    "path" : "pages/hr/statistics/readResume",
+		    "style": {
+		        "navigationBarTitleText": "浏览过的简历",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+			}
+		},
+		{
+		    "path" : "pages/hr/statistics/newRefreshResume",
+		    "style": {
+		        "navigationBarTitleText": "新加入的人",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+			}
+		},
+		{
+		    "path" : "pages/hr/statistics/interestedCand",
+		    "style": {
+		        "navigationBarTitleText": "对我感兴趣的人",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor": "#31B9B3",
+				"app-plus" : {
+				    // "titleNView" : false, 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+					"backgroundColorTop" : "#31B9B3",
+					"backgroundColorBottom" : "#f8f8f8",
+					"scrollIndicator" : "none"
+				},
+				"enablePullDownRefresh" : false ,// 开启单页面下拉刷新功能
+				"onReachBottomDistance": 50		// 距离底部50px 时触发上滑分页
+			}
+		},
+		{
+		    "path" : "pages/hr/changeToCand",
+		    "style" : {
+				"navigationBarTitleText" : "切换身份",
+		        "app-plus" : {
+		            "titleNView" : false 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		},
+		{
+		    "path" : "pages/candidate/changeToHR",
+		    "style" : {
+				"navigationBarTitleText" : "切换身份",
+		        "app-plus" : {
+		            "titleNView" : false 	// 禁用原生导航栏
+					// "bounce" : "none"  		// 将回弹属性关掉
+		        },
+		        "enablePullDownRefresh" : false // 开启单页面下拉刷新功能
+		    }
+		}
+    ],
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#FFFFFF",
+		"fontSize": "14px"
+    },
+    "tabBar" : {
+        "color" : "#8a8a8a",
+        "selectedColor" : "#31B9B3",
+        "borderStyle" : "black",
+        "backgroundColor" : "#ffffff",
+        "list" : [
+            {
+                "pagePath" : "pages/candidate/position",
+                "text" : "职位",
+                "iconPath" : "static/icons/candidate/cand-recommend.png",
+                "selectedIconPath" : "static/icons/candidate/cand-recommend-selected.png"
+            },
+			{
+			    "pagePath" : "pages/candidate/message",
+			    "text" : "消息",
+			    "iconPath" : "static/icons/candidate/cand-msg.png",
+			    "selectedIconPath" : "static/icons/candidate/cand-msg-selected.png"
+			},
+			{
+			    "pagePath" : "pages/candidate/discover",
+			    "text" : "发现",
+			    "iconPath" : "static/icons/candidate/cand-discover.png",
+			    "selectedIconPath" : "static/icons/candidate/cand-discover-selected.png"
+			},
+            {
+                "pagePath" : "pages/candidate/mine",
+                "text" : "我的",
+                "iconPath" : "static/icons/candidate/cand-me.png",
+                "selectedIconPath" : "static/icons/candidate/cand-me-selected.png"
+            },
+			{
+			    "pagePath" : "pages/welcome/changePerson",
+			    "text" : "切换",
+			    "iconPath" : "static/icons/candidate/cand-me.png",
+			    "selectedIconPath" : "static/icons/candidate/cand-me-selected.png",
+				"visible" : false
+			}
+        ]
+    }
+}

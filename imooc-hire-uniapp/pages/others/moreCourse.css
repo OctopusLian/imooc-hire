@@ -1,0 +1,36 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+}
+
+.introduce {
+	text-indent: 20px;
+	color: #1b1b1b;
+	font-size: 13px;
+	font-weight: 330;
+	width: 440rpx;
+}
+
+/* .logout {
+	background-color: #4a4c52;
+}
+.logout-touched {
+	background-color: #6d6b6b;
+} */
+.fengjianyingyue {
+	width: 220rpx;
+	border-width: 1rpx;
+	border-color: #FFFFFF;
+	border-radius: 10rpx;
+}
+.fengjianyingyue-name {
+	width: 166rpx;
+	margin-top: 10rpx;
+	opacity: 0.8;
+}
+
+.course {
+	width: 330rpx;
+	border-radius: 5px;
+}

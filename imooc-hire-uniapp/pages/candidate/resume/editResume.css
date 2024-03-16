@@ -1,0 +1,155 @@
+page {
+	background-color: #FFFFFF;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	padding-bottom: 100px;
+}
+
+
+.me-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+	padding: 10px 20px;
+}
+
+.name-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-self: center;
+}
+
+.edit-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.name-words {
+	font-size: 26px;
+	font-weight: 500;
+	align-self: center;
+}
+
+.lable-words {
+	font-size: 20px;
+	font-weight: 500;
+	align-self: center;
+}
+
+.desc-words {
+	margin-top: 6px;
+	font-size: 15px;
+	font-weight: 300;
+	align-self: flex-start;
+	color: #747377;
+}
+
+.small-face {
+	width: 66px;
+	height: 66px;
+	border: solid 1px #FFFFFF;
+	border-radius: 50px;
+	align-self: center;
+}
+
+.icon-edit {
+	width: 20px;
+	height: 20px;
+	align-self: center;
+	margin-left: 6px;
+}
+.icon-edit-small {
+	width: 18px;
+	height: 18px;
+	align-self: center;
+	margin-left: 2px;
+}
+
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0px 20px;
+}
+
+.info-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-right: 28px;
+}
+
+
+.work-wrapper {
+	padding: 0px 20px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.work-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.company-name-words {
+	font-size: 16px;
+	align-self: center;
+}
+.work-year-words {
+	font-size: 14px;
+	color: #7c8083;
+	font-weight: 300;
+	/* margin-top: 6px; */
+	align-self: center;
+}
+
+.update-area {
+	display: flex;
+	flex-direction: row;
+}
+
+.work-exp-content {
+	margin-top: 6px;
+	font-size: 16px;
+	color: #535657;
+	font-weight: 300;
+	line-height: 26px
+}
+
+.position-words {
+	/* margin-top: 2px; */
+	/* font-size: 14px; */
+	font-weight: 400;
+	color: #8e8b94;
+}
+
+
+.tags-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 0px 20px;
+	margin-top: 6px;
+}
+
+.cand-tags-wrapper {
+	margin-top: 14px;
+}
+
+.cand-tag {
+	background-color: #f5f5f5;
+	color: #606161;
+	margin-right: 8px;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 6px 10px;
+	border-radius: 4px;
+}

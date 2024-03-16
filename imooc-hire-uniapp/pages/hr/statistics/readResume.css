@@ -1,0 +1,113 @@
+page {
+	display: flex;
+	flex-direction: column;
+	background-color: #f8f8f8;
+}
+
+.resume-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	margin-top: 10px;
+	background-color: #ffffff;
+	padding: 16px 6px;
+}
+
+.resume-item {
+	width: 95%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	align-self: center;
+}
+
+.small-face {
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	align-self: center;
+}
+
+.resume-name {
+	font-size: 20px;
+	color: #464647;
+}
+
+.short-words-wrapper {
+	font-size: 12px;
+	color: #77767a;
+	margin-top: 2px;
+}
+
+.short-words {
+	margin-right: 10px;
+}
+
+.resume-left {
+	align-self: center;
+}
+
+.middle-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.middle-part {
+	align-self: center;
+	width: 95%;
+	margin-top: 2px;
+}
+
+
+
+.small-icon {
+	width: 16px;
+	height: 16px;
+	align-self: center;
+}
+
+.middle-words {
+	color: #adacb6;
+	font-size: 14px;
+	align-self: center;
+	margin-left: 5px;
+}
+
+.advantage-words {
+	color: #a09fa8;
+	font-size: 15px;
+	align-self: center;
+}
+
+.bottom-part {
+	width: 95%;
+	align-self: center;
+	color: #a09fa8;
+	font-size: 12px;
+}
+
+.tags-part {
+	align-self: center;
+	width: 95%;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.my-tag {
+	color: #617085;
+	background-color: #f8f9fb;
+	font-size: 12px;
+	font-weight: 300;
+	margin-right: 10px;
+	
+	padding: 4px 10px;
+	border-radius: 6px;
+	margin-top: 6px;
+}
