@@ -1,0 +1,261 @@
+{
+  "id": "654386",
+  "name": "lee",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11372701",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    },
+    {
+      "icon_id": "11372777",
+      "name": "收藏",
+      "font_class": "shoucang1",
+      "unicode": "e8c6",
+      "unicode_decimal": 59590
+    },
+    {
+      "icon_id": "658012",
+      "name": "飞机",
+      "font_class": "trip",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "679789",
+      "name": "午餐",
+      "font_class": "launch",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "864548",
+      "name": "juhui",
+      "font_class": "team-building",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "884005",
+      "name": "带薪年假期",
+      "font_class": "vacation",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "1279458",
+      "name": "股票2",
+      "font_class": "stock",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "2076389",
+      "name": "地铁小",
+      "font_class": "subway",
+      "unicode": "e8c3",
+      "unicode_decimal": 59587
+    },
+    {
+      "icon_id": "2966872",
+      "name": "实物-大巴",
+      "font_class": "daba",
+      "unicode": "e6fa",
+      "unicode_decimal": 59130
+    },
+    {
+      "icon_id": "3590944",
+      "name": "奖金记录",
+      "font_class": "bonus",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "3909822",
+      "name": "体检记录",
+      "font_class": "physical-examination",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "4294066",
+      "name": "钱",
+      "font_class": "money",
+      "unicode": "e783",
+      "unicode_decimal": 59267
+    },
+    {
+      "icon_id": "4294081",
+      "name": "公文包2",
+      "font_class": "briefcase",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
+      "icon_id": "5158186",
+      "name": "奶瓶",
+      "font_class": "feeding-bottle",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "5881137",
+      "name": "车辆",
+      "font_class": "car",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7348154",
+      "name": "雨伞1",
+      "font_class": "umbrella",
+      "unicode": "e78a",
+      "unicode_decimal": 59274
+    },
+    {
+      "icon_id": "7567773",
+      "name": "24gl-phoneLoudspeaker",
+      "font_class": "phone",
+      "unicode": "e94f",
+      "unicode_decimal": 59727
+    },
+    {
+      "icon_id": "9114443",
+      "name": "94管理",
+      "font_class": "management",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "15985514",
+      "name": "蛋糕杯",
+      "font_class": "cake",
+      "unicode": "e80b",
+      "unicode_decimal": 59403
+    },
+    {
+      "icon_id": "18455990",
+      "name": "楼房，房子",
+      "font_class": "house",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "18866927",
+      "name": "博士生",
+      "font_class": "doctor",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "20034706",
+      "name": "16部门管理规范",
+      "font_class": "standard",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    },
+    {
+      "icon_id": "20810677",
+      "name": "专车-1",
+      "font_class": "car2",
+      "unicode": "e78b",
+      "unicode_decimal": 59275
+    },
+    {
+      "icon_id": "23426056",
+      "name": "系统培训",
+      "font_class": "training",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "24284842",
+      "name": "津贴申请-02",
+      "font_class": "allowance",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "15248089",
+      "name": "绩效考核部门岗位和标准",
+      "font_class": "position-up",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "29113737",
+      "name": "领结-01",
+      "font_class": "boss-good",
+      "unicode": "e8fc",
+      "unicode_decimal": 59644
+    },
+    {
+      "icon_id": "11372640",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e8ac",
+      "unicode_decimal": 59564
+    },
+    {
+      "icon_id": "3502369",
+      "name": "keyboard",
+      "font_class": "keyboard",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "4302922",
+      "name": "语音",
+      "font_class": "sousuoxiawu-defuben",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "4034948",
+      "name": "指南针 (1)",
+      "font_class": "zhinanzhen",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "4049716",
+      "name": "指南针",
+      "font_class": "zhinanzhen1",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "978356",
+      "name": "朋友圈",
+      "font_class": "pengyouquan",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "1473264",
+      "name": "我的",
+      "font_class": "wode-active",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "3929125",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e8fb",
+      "unicode_decimal": 59643
+    },
+    {
+      "icon_id": "586888",
+      "name": "fire",
+      "font_class": "fire",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    }
+  ]
+}
