@@ -1,0 +1,10 @@
+server:
+  port: 7001
+  tomcat:
+    uri-encoding: UTF-8
+    max-swallow-size: -1
+spring:
+  profiles:
+    active: 
+  banner:
+    location: classpath:banner/banner.txt
